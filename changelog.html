@@ -28,6 +28,7 @@
       background: white;
       padding: 30px;
       border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .version {
@@ -35,37 +36,40 @@
       border-bottom: 1px solid #ddd;
     }
 
+    .version:last-child {
+      border-bottom: none;
+    }
+
     .version h2 {
       margin: 0;
       font-size: 1.25rem;
+      color: #222;
     }
 
     .version span {
       color: #777;
       font-weight: normal;
       font-size: 0.9rem;
+      margin-left: 8px;
     }
 
     .version p {
-      margin-top: 10px;
-      color: #333;
-    }
-
-    .toggle {
-      background: none;
-      border: none;
-      padding: 0;
-      font-size: 1.25rem;
-      font-weight: bold;
-      cursor: pointer;
-      width: 100%;
-      text-align: left;
-    }
-
-    .details {
-      display: none;
-      margin-top: 10px;
+      margin: 10px 0 0 0;
       color: #444;
+      line-height: 1.6;
+    }
+
+    .category-list, .game-list {
+      margin-top: 15px;
+      padding-left: 20px;
+      column-count: 2; /* Makes the long game list easier to read */
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .category-list {
+      column-count: 1;
+      list-style-type: square;
     }
   </style>
 </head>
@@ -92,19 +96,41 @@
     </div>
 
     <div class="version">
-      <button class="toggle">V3.0 <span>2/9/2026</span></button>
-      <div class="details">
-        <p>
-          To celebrate 2k visits, we've added non-intrusive ads back,
-          added a new category/sorting feature, and Bob’s Pick.
-          We also revamped the changelog.
-        </p>
-      </div>
+      <h2>V3.0 <span>2/9/2026</span></h2>
+      <p>
+        To celebrate 2k visits, we've added non-intrusive ads back, added a new category/sorting feature, and Bob’s Pick. We also revamped the changelog.
+      </p>
+      
+      <p><strong>The categories have been listed below:</strong></p>
+      <ul class="category-list">
+        <li>A-Z</li>
+        <li>Puzzle / Strategy</li>
+        <li>Arcade / Classics / Platformers</li>
+        <li>Racing / Driving</li>
+        <li>Sports</li>
+        <li>Shooter / Action</li>
+        <li>.io Gaems</li>
+        <li>Horror</li>
+        <li>Idle / Clicker / Incremental</li>
+        <li>Adventure / Story</li>
+        <li>RPG / Story / Dungeon</li>
+        <li>Simulation / Sandbox</li>
+        <li>Casual / Fun / Misc</li>
+      </ul>
+
+      <p>
+        We’ve also added 57 new gaems to expand the library and give everyone even more variety to play. This update focuses on introducing a wide range of new .io titles, multiplayer gaems, classics, and community-requested additions.
+      </p>
+
+      <p><strong>New Gaems:</strong></p>
+      <ul class="game-list">
+        <li>2048.io</li><li>Basket Bros</li><li>Basket Random</li><li>Bloxd.io</li><li>Bopz.io</li><li>Boxing Random</li><li>Buildroyale.io</li><li>Copter.io</li><li>Crazy Cattle 3D</li><li>Crazy Chicken 3D</li><li>Curve Fever</li><li>Defly.io</li><li>Doblox</li><li>Doodlr.io</li><li>DualForce Idle</li><li>Escape Road</li><li>Escape Road 2</li><li>Ev.io</li><li>EvoWars.io</li><li>Gamepix</li><li>Gats.io</li><li>Getaway Shootout</li><li>Hexanaut.io</li><li>Hole.io</li><li>Hordes.io</li><li>Kour.io</li><li>Limax.io</li><li>Lordz.io</li><li>Mine Energy 2</li><li>Miniblox</li><li>Mk48.io</li><li>Moomoo.io</li><li>Mope.io</li><li>Oceanar.io</li><li>Octordle</li><li>Openfront.io</li><li>Paper Racer</li><li>Paper.io</li><li>Paper.io 2</li><li>Powerline.io</li><li>Quordle</li><li>Rocket Bot Royale</li><li>RocketGoal.io</li><li>Snowball.io</li><li>Soccer Random</li><li>Space Company</li><li>Splix.io</li><li>Starve.io</li><li>Street Fighter</li><li>Street Fighter 2</li><li>Superhex.io</li><li>Tanko.io</li><li>Warbot.io</li><li>Wings.io</li><li>Wordle Infinite</li><li>Worms Zone</li><li>Wrestle Bros</li><li>Yohoho.io</li><li>Zlap.io</li><li>Zombs.io</li>
+      </ul>
     </div>
 
     <div class="version">
       <h2>V2.3 <span>2/6/2026</span></h2>
-      <p>Replaced the old chat due to hosting issues.</p>
+      <p>Replaced the old chat with a different one due to an issue in the system where we hosted the chat.</p>
     </div>
 
     <div class="version">
@@ -114,7 +140,7 @@
 
     <div class="version">
       <h2>V2.1 <span>2/4/2026</span></h2>
-      <p>Changed font to Helvetica Neue / SF Pro.</p>
+      <p>Changed font to Helvetica Neue / SF Pro for a more professional look.</p>
     </div>
 
     <div class="version">
@@ -123,21 +149,15 @@
     </div>
 
     <div class="version">
-      <button class="toggle">V2.0.1 <span>1/31/2026</span></button>
-      <div class="details">
-        <p>
-          Expanded the collection with 30 new games and added bug submissions.
-        </p>
-      </div>
+      <h2>V2.0.1 <span>1/31/2026</span></h2>
+      <p>Expanded the collection with 30 new games and added bug submissions.</p>
     </div>
 
     <div class="version">
-      <button class="toggle">V2.0 (Revamp) <span>1/22/2026</span></button>
-      <div class="details">
-        <p>
-          Added chat, Q&A, Game of the Day, and several new site features.
-        </p>
-      </div>
+      <h2>V2.0 (Revamp) <span>1/22/2026</span></h2>
+      <p>We’ve added a bunch of new stuff to the site, including chat, Q&A, Gaem of the Day, and a few other fun upgrades. </p>
+      
+      <p></p>Everything’s meant to make the place easier to use and a lot more enjoyable to hang out in. We also gave the whole UI a fresh revamp to make everything cleaner, smoother, and way easier to navigate. Pages load nicer, menus feel more organized, and the overall layout looks a lot more modern. Hope you like the new features because there’s plenty more coming.</p>
     </div>
 
     <div class="version">
@@ -147,12 +167,7 @@
 
     <div class="version">
       <h2>V1.3 <span>1/1/2026</span></h2>
-      <p>Christmas theme replaced with New Year’s theme.</p>
-    </div>
-
-    <div class="version">
-      <h2>V1.2 <span>12/24/2025</span></h2>
-      <p>Christmas theme replaced with New Year’s theme.</p>
+      <p>Christmas theme replaced with New Year’s theme, and a few games added.</p>
     </div>
 
     <div class="version">
@@ -171,12 +186,8 @@
     </div>
 
     <div class="version">
-      <button class="toggle">V0.1-alpha <span>8/2025</span></button>
-      <div class="details">
-        <p>
-          First version of the site created with only a few games.
-        </p>
-      </div>
+      <h2>V0.1-alpha <span>8/2025</span></h2>
+      <p>First version of the site created with only a few games.</p>
     </div>
 
     <div class="version">
@@ -185,16 +196,6 @@
     </div>
 
   </div>
-
-  <script>
-    document.querySelectorAll(".toggle").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const details = btn.nextElementSibling;
-        details.style.display =
-          details.style.display === "block" ? "none" : "block";
-      });
-    });
-  </script>
 
 </body>
 </html>
