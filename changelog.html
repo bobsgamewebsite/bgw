@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Changelog</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: #f2f2f2;
+    }
+
+    .page-header {
+      height: 260px;
+      background: #666;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: -50px auto 50px;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .version {
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .version h2 {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    .version span {
+      color: #777;
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+
+    .version p {
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .toggle {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 1.25rem;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+
+    .details {
+      display: none;
+      margin-top: 10px;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-header">Changelog</div>
+
+  <div class="container">
+
+    <div class="version">
+      <h2>Version Key</h2>
+      <p>
+        <strong>X.0.0</strong> (Major): Multiple features or a full overhaul<br>
+        <strong>0.X.0</strong> (Minor): Theme changes or feature tweaks<br>
+        <strong>0.0.X0</strong> (Game Addition): New game added<br>
+        <strong>0.0.0X</strong> (Bug Fix): Bug fixes or removals
+      </p>
+    </div>
+
+    <div class="version">
+      <h2>V3.0.01 <span>2/9/2026</span></h2>
+      <p>Removed ads.</p>
+    </div>
+
+    <div class="version">
+      <button class="toggle">V3.0 <span>2/9/2026</span></button>
+      <div class="details">
+        <p>
+          To celebrate 2k visits, we've added non-intrusive ads back,
+          added a new category/sorting feature, and Bob’s Pick.
+          We also revamped the changelog.
+        </p>
+      </div>
+    </div>
+
+    <div class="version">
+      <h2>V2.3 <span>2/6/2026</span></h2>
+      <p>Replaced the old chat due to hosting issues.</p>
+    </div>
+
+    <div class="version">
+      <h2>V2.2 <span>2/5/2026</span></h2>
+      <p>Added TBTT2026 (The BGW Top Twenty 2026).</p>
+    </div>
+
+    <div class="version">
+      <h2>V2.1 <span>2/4/2026</span></h2>
+      <p>Changed font to Helvetica Neue / SF Pro.</p>
+    </div>
+
+    <div class="version">
+      <h2>V2.0.11 <span>2/3/2026</span></h2>
+      <p>Fixed Starblast.io fullscreen bug and replaced Venge.io with VivoMusic.</p>
+    </div>
+
+    <div class="version">
+      <button class="toggle">V2.0.1 <span>1/31/2026</span></button>
+      <div class="details">
+        <p>
+          Expanded the collection with 30 new games and added bug submissions.
+        </p>
+      </div>
+    </div>
+
+    <div class="version">
+      <button class="toggle">V2.0 (Revamp) <span>1/22/2026</span></button>
+      <div class="details">
+        <p>
+          Added chat, Q&A, Game of the Day, and several new site features.
+        </p>
+      </div>
+    </div>
+
+    <div class="version">
+      <h2>V1.4 <span>1/2/2026</span></h2>
+      <p>New Year’s theme removed and a few games added.</p>
+    </div>
+
+    <div class="version">
+      <h2>V1.3 <span>1/1/2026</span></h2>
+      <p>Christmas theme replaced with New Year’s theme.</p>
+    </div>
+
+    <div class="version">
+      <h2>V1.2 <span>12/24/2025</span></h2>
+      <p>Christmas theme replaced with New Year’s theme.</p>
+    </div>
+
+    <div class="version">
+      <h2>V1.1 <span>12/15/2025</span></h2>
+      <p>Bob Brainrot added with many changes and games.</p>
+    </div>
+
+    <div class="version">
+      <h2>V1.0 <span>10/31/2025</span></h2>
+      <p>Fake error screen replaced with a proper menu.</p>
+    </div>
+
+    <div class="version">
+      <h2>V0.9-beta (Revamp) <span>10/23/2025</span></h2>
+      <p>Undertell revamped into the BGW.</p>
+    </div>
+
+    <div class="version">
+      <button class="toggle">V0.1-alpha <span>8/2025</span></button>
+      <div class="details">
+        <p>
+          First version of the site created with only a few games.
+        </p>
+      </div>
+    </div>
+
+    <div class="version">
+      <h2>Version -3245.24365 <span>4/16/854854 B.C.E.</span></h2>
+      <p>Thanks to groundbreaking overtime shifts, FIRE was invented.</p>
+    </div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll(".toggle").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const details = btn.nextElementSibling;
+        details.style.display =
+          details.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+
+</body>
+</html>
